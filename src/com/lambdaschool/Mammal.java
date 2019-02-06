@@ -2,6 +2,10 @@ package com.lambdaschool;
 
 public class Mammal extends Animal
 {
+    private String move = "Walk";
+    private String breathe = "Lungs";
+    private String reproduce = "Live Births";
+
     public Mammal(String name, int year)
     {
         super(name, year);
@@ -10,18 +14,18 @@ public class Mammal extends Animal
     @Override
     public String move()
     {
-        return "Walk";
+        return move;
     }
 
     @Override
     public String breathe()
     {
-        return "Lungs";
+        return breathe;
     }
 
     @Override
     public String reproduce()
     {
-        return "Live Births";
+        return reproduce;
     }
 }
